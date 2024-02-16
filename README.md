@@ -64,7 +64,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 - `Password`: admin
 
 ## To Provision Specific Server
-- Configure the [tfvars](https://github.com/devops-terraform-aws/modules/blob/main/terraform.tfvars#L2-#L8)
+- Configure the [tfvars](https://github.com/devops-terraform-aws/devsecops/blob/main/terraform.tfvars#L5-#L6)
 - For example to provision only `Jenkins Server`, set <br>
 ```
 bootstrap_jenkins   = true
@@ -76,11 +76,11 @@ bootstrap_sonarqube = false
 To manage servers on AWS, install `Ansible` [click here](https://github.com/devops-terraform-aws/devsecops/blob/main/ansible/README.md)
 - To stop all Virtual Machines on AWS dynamically
     ```
-    ansible-playbook stop_all_ec2.yml
+    ansible-playbook ansible/stop_all_ec2.yml
     ```
 - To start all Virtual Machines on AWS dynamically
     ```
-    ansible-playbook start_all_ec2.yml
+    ansible-playbook ansible/start_all_ec2.yml
     ```
 
 **Step 3: Install Docker and Run the App Using a Container:**
