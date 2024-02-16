@@ -1,5 +1,0 @@
-.*
-terraform.tfs*
-*.pem
-venv
-*.txt

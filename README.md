@@ -73,7 +73,7 @@ bootstrap_sonarqube = false
 
 
 ## Ansible Virtual Environment Configuration - WSL Ubuntu (Optional)
-To manage servers on AWS, install `Ansible` [click here](https://github.com/devops-terraform-aws/devsecops/ansible/README.md)
+To manage servers on AWS, install `Ansible` [click here](https://github.com/devops-terraform-aws/devsecops/blob/main/ansible/README.md)
 - To stop all Virtual Machines on AWS dynamically
     ```
     ansible-playbook stop_all_ec2.yml
