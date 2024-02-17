@@ -38,6 +38,9 @@ git clone https://github.com/devops-terraform-aws/devsecops.git
     pip install ansible-core
     pip install awscli && pip install botocore && pip install boto3
     ```
+    ```
+    ansible-galaxy collection install amazon.aws
+    ```
 
 - Terraform Installation
     - Run the `install-terraform.sh` script
