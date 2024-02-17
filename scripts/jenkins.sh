@@ -28,9 +28,17 @@ sudo chmod +x /usr/local/bin/terraform
 curl -s https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash
 
 
-############# docker installation ###############
+############# Docker Installation ###############
 sudo apt-get update -y
 sudo apt-get install docker.io -y
 sudo usermod -aG docker $USER  # Replace with your system's username, e.g., 'ubuntu'
 newgrp docker
 sudo chmod 777 /var/run/docker.sock
+
+
+############# Trivy Installation ################
+sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update -y
+sudo apt-get install trivy -y        

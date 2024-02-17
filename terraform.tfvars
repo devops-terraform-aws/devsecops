@@ -3,4 +3,4 @@ region              = "us-east-1"
 name                = "server"
 bootstrap           = true
 bootstrap_jenkins   = true
-bootstrap_sonarqube = false
+bootstrap_sonarqube = true

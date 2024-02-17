@@ -15,7 +15,7 @@ module "sonarqube" {
   count           = var.bootstrap && var.bootstrap_sonarqube ? 1 : 0
   ami             = data.aws_ami.ubuntu-linux-22.id
   key_name        = module.aws_key[0].get_key_name
-  instance_type   = var.instance_type
+  instance_type   = "t2.medium"
   security_groups = module.security_group[0].security_name
   name            = "sonar-${var.name}"
   user_data       = file("${path.module}/scripts/sonarqube.sh")
