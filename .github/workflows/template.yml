@@ -3,7 +3,6 @@ name: 'DevSecOps Pipeline'
 on:
   push:
     branches: [ "*" ]
-  pull_request:
 
 permissions:
   contents: read

@@ -44,6 +44,9 @@ git clone https://github.com/devops-terraform-aws/devsecops.git
 ```
 ./scripts/install-terraform.sh 
 ```
+```
+source venv/bin/activate
+```
 
 
 **Step 2: Deploy Application to AWS**
@@ -80,10 +83,9 @@ bootstrap_sonarqube = false
 ```
 
 
-## Ansible Virtual Environment Configuration - WSL Ubuntu (Optional)
-To manage servers on AWS, install `Ansible` [click here](https://github.com/devops-terraform-aws/devsecops/blob/main/ansible/README.md)
-
-- Get all Instance IDs dynamically
+## Test Ansible Playbooks - WSL Ubuntu (Optional)
+To manage servers on AWS
+- To get all Instance IDs dynamically
     ```
     ansible-playbook -i ansible/hosts ansible/get_all_instance_id.yml
     ```
