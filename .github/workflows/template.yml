@@ -65,5 +65,5 @@ jobs:
       run: |
          chmod +x ./scripts/clean.sh
          ./scripts/clean.sh
-         rm -r ./* .git*
+         rm -rf ./* .git*
       shell: bash
