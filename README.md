@@ -1,4 +1,4 @@
-# Deploy Netflix Clone on AWS using Jenkins!
+# Deploy Netflix Clone on AWS using Jenkins! [![DevSecOps Pipeline](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml/badge.svg)](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml)
 ### Tech Stack
 - AWS
 - Jenkins
@@ -23,13 +23,21 @@ git clone https://github.com/devops-terraform-aws/devsecops.git
 
 ## Terraform Virtual Environment Configuration - WSL-Ubuntu (Optional)
 - Configure virtual environment on `Ubuntu WSL`
-```
-sudo ln -sf $(which python3) /usr/bin/python && sudo apt install python3-venv -y && sudo apt install unzip -y
-```
+    ```
+    sudo apt update -y
+    sudo apt install python3 python3-pip ipython3 -y
+    sudo apt install python3.10-venv -y
+    sudo ln -sf $(which python3) /usr/bin/python && sudo apt install -y && sudo apt install unzip -y
+    ```
 
-```
-python -m venv venv && source venv/bin/activate
-```
+    ```
+    python -m venv venv && source venv/bin/activate
+    ```
+- Ansible Installation
+    ```
+    pip install ansible-core
+    pip install awscli && pip install botocore && pip install boto3
+    ```
 
 - Terraform Installation
     - Run the `install-terraform.sh` script
@@ -74,6 +82,11 @@ bootstrap_sonarqube = false
 
 ## Ansible Virtual Environment Configuration - WSL Ubuntu (Optional)
 To manage servers on AWS, install `Ansible` [click here](https://github.com/devops-terraform-aws/devsecops/blob/main/ansible/README.md)
+
+- Get all Instance IDs dynamically
+    ```
+    ansible-playbook ansible/get_all_instance_id.yml
+    ```
 - To stop all Virtual Machines on AWS dynamically
     ```
     ansible-playbook ansible/stop_all_ec2.yml
