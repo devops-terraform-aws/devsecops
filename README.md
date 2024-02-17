@@ -85,15 +85,15 @@ To manage servers on AWS, install `Ansible` [click here](https://github.com/devo
 
 - Get all Instance IDs dynamically
     ```
-    ansible-playbook ansible/get_all_instance_id.yml
+    ansible-playbook -i ansible/hosts ansible/get_all_instance_id.yml
     ```
 - To stop all Virtual Machines on AWS dynamically
     ```
-    ansible-playbook ansible/stop_all_ec2.yml
+    ansible-playbook -i ansible/hosts ansible/stop_all_ec2.yml
     ```
 - To start all Virtual Machines on AWS dynamically
     ```
-    ansible-playbook ansible/start_all_ec2.yml
+    ansible-playbook -i ansible/hosts ansible/start_all_ec2.yml
     ```
 
 **Step 3: Install Docker and Run the App Using a Container:**
