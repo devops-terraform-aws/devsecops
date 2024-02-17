@@ -28,16 +28,6 @@ variable "bootstrap_jenkins" {
   description = "Bootstrap Jenkins server"
 }
 
-variable "bootstrap_tomcat" {
-  type        = bool
-  description = "Bootstrap Tomcat server"
-}
-
-variable "bootstrap_nexus" {
-  type        = bool
-  description = "Bootstrap Nexus server"
-}
-
 variable "bootstrap_sonarqube" {
   type        = bool
   description = "Bootstrap SonarQube server"

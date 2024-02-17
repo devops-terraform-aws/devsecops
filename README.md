@@ -1,4 +1,4 @@
-# Deploy Netflix Clone on AWS using Jenkins!
+# Deploy Netflix Clone on AWS using Jenkins! [![DevSecOps Pipeline](https://github.com/devops-terraform-aws/devsecops/actions/workflows/terraform.yml/badge.svg?branch=main)](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml)
 ### Tech Stack
 - AWS
 - Jenkins
@@ -35,7 +35,7 @@ git clone https://github.com/devops-terraform-aws/devsecops.git
     ```
 - Ansible Installation
     ```
-    pip install ansible
+    pip install ansible-core
     pip install awscli && pip install botocore && pip install boto3
     ```
 
