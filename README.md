@@ -21,7 +21,7 @@
 git clone https://github.com/devops-terraform-aws/devsecops.git
 ```
 
-## Terraform Virtual Environment Configuration - WSL-Ubuntu (Optional)
+## Ansible and Terraform Virtual Environment Configuration - WSL Ubuntu (Optional)
 - Configure virtual environment on `Ubuntu WSL`
     ```
     sudo apt update -y
@@ -37,6 +37,9 @@ git clone https://github.com/devops-terraform-aws/devsecops.git
     ```
     pip install ansible-core
     pip install awscli && pip install botocore && pip install boto3
+    ```
+    ```
+    ansible-galaxy collection install amazon.aws
     ```
 
 - Terraform Installation
