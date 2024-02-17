@@ -1,4 +1,4 @@
-# Deploy Netflix Clone on AWS using Jenkins! [![DevSecOps Pipeline](https://github.com/devops-terraform-aws/devsecops/actions/workflows/terraform.yml/badge.svg?branch=main)](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml)
+# Deploy Netflix Clone on AWS using Jenkins! [![DevSecOps Pipeline](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml/badge.svg)](https://github.com/devops-terraform-aws/devsecops/actions/workflows/template.yml)
 ### Tech Stack
 - AWS
 - Jenkins
