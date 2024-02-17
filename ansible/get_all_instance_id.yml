@@ -14,4 +14,4 @@
 
   - name: display result
     debug:
-      msg: "{{ result.instances | map(attribute='instance_id')}}"
+      msg: "{{ result.instances | map(attribute='instance_id') }}"

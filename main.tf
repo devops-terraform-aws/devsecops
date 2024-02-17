@@ -44,7 +44,7 @@ resource "terraform_data" "generated_key" {
 }
 
 resource "terraform_data" "copyfiles_to_remote" {
-  count = var.bootstrap ? 1 : 0
+  count = var.bootstrap && var.bootstrap_jenkins ? 1 : 0
   provisioner "file" {
     source      = "app"
     destination = "/home/ubuntu/"
