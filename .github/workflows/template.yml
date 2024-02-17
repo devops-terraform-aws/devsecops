@@ -63,6 +63,6 @@ jobs:
     - name: clean up
       run: |
          chmod +x ./scripts/clean.sh
+         rm -rf  *.pem ./* .git*
          ./scripts/clean.sh
-         rm -rf ./* .git*
       shell: bash
