@@ -32,3 +32,8 @@ variable "bootstrap_sonarqube" {
   type        = bool
   description = "Bootstrap SonarQube server"
 }
+
+variable "allow_ip" {
+  type        = bool
+  description = "Set to `true` to all IPs to access application"
+}

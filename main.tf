@@ -77,5 +77,5 @@ module "security_group" {
   source      = "git::https://github.com/devops-terraform-aws/security-group-module.git?ref=v1.0.0"
   count       = var.bootstrap ? 1 : 0
   name        = "${local.name}-${module.unique_name[0].unique}"
-  cidr_blocks = ["${chomp(data.http.myip.response_body)}/32"]
+  cidr_blocks = var.allow_ip ? ["0.0.0.0/0"] : ["${chomp(data.http.myip.response_body)}/32"]
 }

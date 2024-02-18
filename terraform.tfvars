@@ -4,3 +4,4 @@ name                = "server"
 bootstrap           = true
 bootstrap_jenkins   = true
 bootstrap_sonarqube = true
+allow_ip            = true
